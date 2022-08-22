@@ -1,5 +1,4 @@
 #include "lists.h"
-#include "lists.h"
 
 /**
  * _realloc - Reallocates a memory block
