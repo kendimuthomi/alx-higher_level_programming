@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+"""create a class square"""
 class Square:
-    '''This is an empty square
-    class that defines a square'''
+    """This is a representation
+    of the class square"""
     pass # An empty block
-s = Square()
