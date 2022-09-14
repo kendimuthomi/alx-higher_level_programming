@@ -28,3 +28,27 @@ class Square:
 
     def area(self):
         return self.__size * self.__size
+    
+    def __eq__(self, other):
+        """check if equal to another square"""
+        return(self.area() == other.area())
+
+    def __let__(self, other):
+        """check if less than other square"""
+        return(self.area() < other.area())
+
+    def __leeq__(self, other):
+        """check if less than or equal to other square"""
+        return(self.area() <= other.area())
+
+    def __neq__(self, other):
+        """check if not equal to another suqare"""
+        return(self.area() != other.area())
+
+    def __grt__(self, other):
+        """check if greater than another square"""
+        return(self.area() > other.area())
+
+    def __greq__(self, other):
+        """check if greater than or equal to another square"""
+        return(self.area() >= other.area())
