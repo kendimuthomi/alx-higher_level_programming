@@ -28,7 +28,7 @@ class Square:
 
     def area(self):
         return self.__size * self.__size
-    
+
     def __eq__(self, other):
         """check if equal to another square"""
         return(self.area() == other.area())
