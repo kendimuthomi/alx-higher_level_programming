@@ -33,22 +33,22 @@ class Square:
         """check if equal to another square"""
         return(self.area() == other.area())
 
-    def __let__(self, other):
+    def __lt__(self, other):
         """check if less than other square"""
         return(self.area() < other.area())
 
-    def __leeq__(self, other):
+    def __le__(self, other):
         """check if less than or equal to other square"""
         return(self.area() <= other.area())
 
-    def __neq__(self, other):
+    def __ne__(self, other):
         """check if not equal to another suqare"""
         return(self.area() != other.area())
 
-    def __grt__(self, other):
+    def __gt__(self, other):
         """check if greater than another square"""
         return(self.area() > other.area())
 
-    def __greq__(self, other):
+    def __ge__(self, other):
         """check if greater than or equal to another square"""
         return(self.area() >= other.area())
