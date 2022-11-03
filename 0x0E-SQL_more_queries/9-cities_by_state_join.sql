@@ -1,5 +1,5 @@
 -- script that lists all cities contained
 -- in the database hbtn_0d_usa
-SELECT city.`id`, city.`name`, state.`name` FROM `cities` AS city
-  INNER JOIN `states` AS `state ON city.`state_id` = state.`id`
-ORDER BY city.`id`;
+SELECT c.`id`, c.`name`, s.`name` FROM `cities` AS c
+  INNER JOIN `states` AS `s` ON c.`state_id` = state.`id`
+ORDER BY c.`id`;
