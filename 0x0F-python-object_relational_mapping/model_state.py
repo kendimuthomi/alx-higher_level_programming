@@ -7,9 +7,12 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 import sys
 
-engine = create_engine('mysql+mysqldb://{}:{}@localhost{}'.format(sys.argv[1],
-        sys.argv[2], sys.argv[3], pre_pool_ping=True))
+engine = create_engine(
+        'mysql+mysqldb://{}:{}@localhost{}'
+        .format(sys.argv[1], sys.argv[2], sys.argv[3], pre_pool_ping=True))
 Base = declarative_base()
+
+
 class State(Base):
     """
     State class:
