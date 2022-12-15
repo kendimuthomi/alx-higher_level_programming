@@ -13,5 +13,5 @@ def find_peak(list_of_integers):
         return max(list_of_integers)
     for i in range(1, n - 1):
         if (list_of_integers[i] >= list_of_integers[i - 1] and
-            list_of_integers[i] >= list_of_integers[i + 1]):
-                return list_of_integers[i]
+           list_of_integers[i] >= list_of_integers[i + 1]):
+            return list_of_integers[i]
