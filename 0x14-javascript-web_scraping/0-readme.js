@@ -6,9 +6,9 @@ const file = args[2];
 const fs = require('fs');
 
 fs.readFile(file, 'utf-8', (error, data) => {
-	if (error) {
-		console.error("Error" + error);
-	} else {
-		console.log(data);
-	}
+  if (error) {
+    console.error('Error' + error);
+  } else {
+    console.log(data);
+  }
 });
