@@ -1,4 +1,10 @@
-// Javascript script that updates the text color of the <header> element to red (#FF0000)
+// JavaScript script that fetches and prints how to say “Hello” depending on the language
 
-const headerColor = document.querySelector('header');
-headerColor.style.color = '#FF0000';
+$('document').ready(function () {
+  const url = 'https://www.fourtonfish.com/hellosalut/?';
+  $('INPUT#btn_translate').click(function () {
+    $.get(url + $.param({ lang: $('INPUT#language_code').val() }), function (data) {
+      $('DIV#hello').html(data.hello);
+    });
+  });
+});
