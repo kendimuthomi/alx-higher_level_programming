@@ -1,4 +1,13 @@
-// Javascript script that updates the text color of the <header> element to red (#FF0000)
+// JavaScript script that adds, removes and clears LI elements from a list when the user clicks
 
-const headerColor = document.querySelector('header');
-headerColor.style.color = '#FF0000';
+$('document').ready(function () {
+  $('DIV#add_item').click(function () {
+    $('UL.my_list').append('<li>Item</li>');
+  });
+  $('DIV#remove_item').click(function () {
+    $('UL.my_list li:last').remove();
+  });
+  $('DIV#clear_list').click(function () {
+    $('UL.my_list').empty();
+  });
+});
